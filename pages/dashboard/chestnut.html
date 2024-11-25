@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="../../css/style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js" defer></script>
+	<script src="../../js/script.js" defer></script>
+
+	<link rel="icon" type="image/png" href="../../images/mushkin_logo.png">
+	<title>mushkin</title>
+</head>
+<body>
+	
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="../../index.html" class="brand">
+			<img src="../../images/mushkin_logo.png" alt="Mushkin Logo" class="logo">
+			mushkin
+		</a>		
+		<ul class="side-menu">
+			<li><a href="../../index.html" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+			<li class="divider" data-text="main">Main</li>
+			<li>
+				<a href="#"><i class='bx bxs-leaf icon' ></i> Mushroom <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="../dashboard/chestnut.html">Chestnut</a></li>
+					<li><a href="../dashboard/milky-mushroom.html">Milky Mushroom</a></li>
+					<li><a href="../dashboard/reishi.html">Reishi</a></li>
+					<li><a href="../dashboard/shiitake.html">Shiitake</a></li>
+					<li><a href="../dashboard/white-oyster.html">White Oyster</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class='bx bxs-video icon' ></i> Live</a></li>
+			<li><a href="#"><i class='bx bx-support icon' ></i> Support</a></li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+				<div class="form-group">
+					<input type="text" placeholder="Search...">
+					<i class='bx bx-search icon' ></i>
+				</div>
+			</form>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-bell icon' ></i>
+				<span class="badge">0</span>
+			</a>
+			<!-- <a href="#" class="nav-link">
+				<i class='bx bxs-message-square-dots icon' ></i>
+				<span class="badge">0</span> -->
+			</a>
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="../../images/blank-profile.png" alt="profile">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+	    </nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<h1 class="title">Dashboard</h1>
+			<ul class="breadcrumbs">
+				<li><a href="../../index.html">Home</a></li>
+				<li class="divider">/</li>
+				<li><a href="../../index.html">Dashboard</a></li>
+				<li class="divider">/</li>
+				<li><a href="../../pages/dashboard/chestnut.html" class="active">Chestnut</a></li>
+			</ul>
+
+			<div class="info-data">
+
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2>0 &deg;C</h2>
+							<p>Temperature</p>
+						</div>
+						<i class='bx bxs-thermometer icon' ></i>
+					</div>
+					<span class="progress" data-value="0%"></span>
+				</div>
+
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2>0 %</h2>
+							<p>Humidity</p>
+						</div>
+						<i class='bx bx-droplet icon'></i>
+					</div>
+					<span class="progress" data-value="0%"></span>
+				</div>
+
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2>0 PPM</h2>
+							<p>CO2</p>
+						</div>
+						<i class='bx bx-wind icon'></i>
+					</div>
+					<span class="progress" data-value="0%"></span>
+				</div>
+
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2>0</h2>
+							<p>Light Intensity</p>
+						</div>
+						<i class='bx bx-bulb icon' ></i>
+					</div>
+					<span class="progress" data-value="0%"></span>
+				</div>
+
+			</div>
+
+            <!-- Control and Section -->
+            <div class="control-parameter">
+
+                <div class="charts-card">
+                    <h2 class="chart-title">Controls</h2>
+                    <div class="control-items">
+                        <div class="control-item">
+                            <label class="switch">
+                                <input type="checkbox" id="lightSwitch">
+                                <span class="slider"></span>
+                            </label>
+                            <p>Light</p>
+                        </div>
+                        <div class="control-item">
+                            <label class="switch">
+                                <input type="checkbox" id="fanSwitch">
+                                <span class="slider"></span>
+                            </label>
+                            <p>Fan</p>
+                        </div>
+                        <div class="control-item">
+                            <label class="switch">
+                                <input type="checkbox" id="humidifierSwitch">
+                                <span class="slider"></span>
+                            </label>
+                            <p>Humidifier</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="charts-card">
+                    <h2 class="chart-title">Environmental Parameters</h2>
+                    <div id="area-chart"></div> <!-- Placeholder for the chart -->
+                </div>
+
+            </div>
+
+
+			
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- NAVBAR -->
+
+
+</body>
+</html>

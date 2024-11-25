@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="./css/style.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts" defer></script>
+	<script src="./js/script.js" defer></script>
+
+	<link rel="icon" type="image/png" href="./images/mushkin_logo.png">
+	<title>mushkin</title>
+</head>
+<body>
+	
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<img src="./images/mushkin_logo.png" alt="Mushkin Logo" class="logo">
+			mushkin
+		</a>		
+		<ul class="side-menu">
+			<li><a href="#" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+			<li class="divider" data-text="main">Main</li>
+			<li>
+				<a href="#"><i class='bx bxs-leaf icon' ></i> Mushroom <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#">Chestnut</a></li>
+					<li><a href="#">Milky Mushroom</a></li>
+					<li><a href="#">Reishi</a></li>
+					<li><a href="#">Shiitake</a></li>
+					<li><a href="#">White Oyster</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class='bx bxs-video icon' ></i> Live</a></li>
+			<li><a href="#"><i class='bx bx-support icon' ></i> Support</a></li>
+
+			<!-- <li class="divider" data-text="table and forms">Table and forms</li> -->
+			 
+			<!-- <li><a href="#"><i class='bx bx-cog icon' ></i> Settings</a></li> -->
+			<!-- <li>
+				<a href="#"><i class='bx bxs-notepad icon' ></i> Forms <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#">Basic</a></li>
+					<li><a href="#">Select</a></li>
+					<li><a href="#">Checkbox</a></li>
+					<li><a href="#">Radio</a></li>
+				</ul>
+			</li> -->
+		</ul>
+		<!-- <div class="ads">
+			<div class="wrapper">
+				<a href="#" class="btn-upgrade">Upgrade</a>
+				<p>Become a <span>PRO</span> member and enjoy <span>All Features</span></p>
+			</div>
+		</div> -->
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+				<div class="form-group">
+					<input type="text" placeholder="Search...">
+					<i class='bx bx-search icon' ></i>
+				</div>
+			</form>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-bell icon' ></i>
+				<span class="badge">0</span>
+			</a>
+			<!-- <a href="#" class="nav-link">
+				<i class='bx bxs-message-square-dots icon' ></i>
+				<span class="badge">0</span> -->
+			</a>
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="./images/blank-profile.png" alt="profile">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<h1 class="title">Dashboard</h1>
+			<ul class="breadcrumbs">
+				<li><a href="#">Home</a></li>
+				<li class="divider">/</li>
+				<li><a href="#" class="active">Dashboard</a></li>
+			</ul>
+
+			<div class="data">
+				<div class="content-data">
+					<div class="head">
+						<h3>Chestnut</h3>
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Edit</a></li>
+								<li><a href="#">Save</a></li>
+								<li><a href="#">Remove</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="chart">
+						<div id="chart"></div>
+					</div> -->
+					<div>
+						<img src="./images/chestnut.png" alt="chestnut" class="mushroom-image">
+					</div>
+					<div class="parameter">
+						<div class="info"><span>Temp</span></div>
+						<div class="info"><span>Hum</span></div>
+						<div class="info"><span>CO2</span></div>
+						<div class="info"><span>Light</span></div>
+					</div>
+					<a class="card-link" href="./pages/dashboard/chestnut.html"></a>
+
+				</div>
+
+				<div class="content-data">
+					<div class="head">
+						<h3>Milky mushroom</h3>
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Edit</a></li>
+								<li><a href="#">Save</a></li>
+								<li><a href="#">Remove</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<img src="./images/milky-mushroom.png" alt="milky-mushroom" class="mushroom-image">
+					</div>
+					<div class="parameter">
+						<div class="info"><span>Temp</span></div>
+						<div class="info"><span>Hum</span></div>
+						<div class="info"><span>CO2</span></div>
+						<div class="info"><span>Light</span></div>
+					</div>
+					<a class="card-link" href="./pages/dashboard/milky-mushroom.html"></a>
+
+				</div>
+
+				<div class="content-data">
+					<div class="head">
+						<h3>Reishi</h3>
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Edit</a></li>
+								<li><a href="#">Save</a></li>
+								<li><a href="#">Remove</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<img src="./images/reishi.png" alt="reishi" class="mushroom-image">
+					</div>
+					<div class="parameter">
+						<div class="info"><span>Temp</span></div>
+						<div class="info"><span>Hum</span></div>
+						<div class="info"><span>CO2</span></div>
+						<div class="info"><span>Light</span></div>
+					</div>
+					<a class="card-link" href="./pages/dashboard/reishi.html"></a>
+
+				</div>
+
+				<div class="content-data">
+					<div class="head">
+						<h3>Shiitake</h3>
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Edit</a></li>
+								<li><a href="#">Save</a></li>
+								<li><a href="#">Remove</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<img src="./images/shiitake.png" alt="shiitake" class="mushroom-image">
+					</div>
+					<div class="parameter">
+						<div class="info"><span>Temp</span></div>
+						<div class="info"><span>Hum</span></div>
+						<div class="info"><span>CO2</span></div>
+						<div class="info"><span>Light</span></div>
+					</div>
+					<a class="card-link" href="./pages/dashboard/shiitake.html"></a>
+
+				</div>
+
+				<div class="content-data">
+					<div class="head">
+						<h3>White Oyster</h3>
+						<div class="menu">
+							<i class='bx bx-dots-horizontal-rounded icon'></i>
+							<ul class="menu-link">
+								<li><a href="#">Edit</a></li>
+								<li><a href="#">Save</a></li>
+								<li><a href="#">Remove</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<img src="./images/white-oyster.png" alt="white-oyster" class="mushroom-image">
+					</div>
+					<div class="parameter">
+						<div class="info"><span>Temp</span></div>
+						<div class="info"><span>Hum</span></div>
+						<div class="info"><span>CO2</span></div>
+						<div class="info"><span>Light</span></div>
+					</div>
+					<a class="card-link" href="./pages/dashboard/white-oyster.html"></a>
+				</div>
+				
+
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- NAVBAR -->
+
+
+</body>
+</html>
